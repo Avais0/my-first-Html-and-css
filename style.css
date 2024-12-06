@@ -1,0 +1,74 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set up the background for the entire body */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for the navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+/* Style for each navbar link */
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+/* Active link style */
+.navbar a.active {
+    color: #ffdd00;
+    font-size: 20px;
+}
+
+/* Hover effect for navbar links */
+.navbar a:hover {
+    color: #ffdd00;
+    border-bottom: 2px solid #ffdd00;
+}
+
+/* Animated effect for the text */
+.ani {
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffdd00;
+    animation: textAnimation 3s ease-in-out infinite;
+}
+
+/* Keyframes for text animation */
+@keyframes textAnimation {
+    0% {
+        transform: translateY(0);
+        opacity: 0.5;
+    }
+    50% {
+        transform: translateY(-10px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 0.5;
+    }
+}
